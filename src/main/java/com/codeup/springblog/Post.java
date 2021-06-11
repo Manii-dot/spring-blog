@@ -11,6 +11,12 @@ public class Post {
         @Column(nullable = false, length = 100)
         private String name;
 
+        @Column(nullable = false, length = 50)
+        private String title;
+
+        @Column(nullable = false)
+        private String body;
+
         @Column(nullable = false)
         private int age;
 
@@ -61,5 +67,21 @@ public class Post {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
     }
 }
