@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class PostController {
 
-    @GetMapping("/posts")
+    @GetMapping("/post")
     @ResponseBody
     public String posts() {
         return "Hello from Spring!";
     }
+
+
 }
