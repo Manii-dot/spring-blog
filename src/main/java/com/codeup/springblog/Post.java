@@ -26,6 +26,9 @@ public class Post {
         @Column(nullable = false)
         private String description;
 
+        @OneToOne
+        private User owner;
+
          public Post() {
          }
 

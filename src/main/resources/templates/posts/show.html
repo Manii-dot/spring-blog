@@ -5,8 +5,12 @@
     <title>Title</title>
 </head>
 <body>
+<nav th:replace="/partials/navbar :: bootstrap_navbar"></nav>
+
 <h1>Your individual Post</h1>
 <h2 th:text="${post.title}"></h2>
 <h5 th:text="${post.body}"></h5>
+
+<footer th:replace="/partials/footer :: footer"></footer>
 </body>
 </html>
